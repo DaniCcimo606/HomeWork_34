@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: 3px solid pink;
+  border-radius: 7px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.btn-icon {
+  height: 20px;
+  width: auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 25px 0;
+  padding: 5px 10px;
+  border: 3px solid pink;
+  border-radius: 7px;
+  word-break: break-all;
+  background-color: #fff;
+}
+
+textarea {
+  font-size: 16px;
+  resize: none;
+  outline: none;
+  overflow: auto;
+}
+
+body {
+  font-size: 18px;
+}
+body .wrapper {
+  min-height: 100vh;
+}
+body .wrapper .main {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+body .wrapper .main .main__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 25px;
+  border: 5px solid pink;
+  border-radius: 10px;
+  background-color: lightcyan;
+}
+body .wrapper .main .main__item .main__title {
+  flex: 100%;
+  display: flex;
+  justify-content: center;
+}
+body .wrapper .main .main__item .main__title h1 {
+  font-size: 24px;
+}
+body .wrapper .main .main__item .main__field {
+  flex: 80%;
+  display: flex;
+}
+body .wrapper .main .main__item .main__btn {
+  flex: 20%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+body .wrapper .main .main__item .main__btn button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body .wrapper .main .main__item .main__notes {
+  display: flex;
+  flex-direction: column;
+}
+body .wrapper .main .main__item .main__notes .main__note {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 4px 10px;
+  border: 3px solid pink;
+  border-radius: 10px;
+}
+body .wrapper .main .main__item .main__notes .main__note .note__desc--wrap {
+  width: 100%;
+  margin-bottom: 5px;
+}
+body .wrapper .main .main__item .main__notes .main__note .note__desc--wrap .note__desc {
+  display: block;
+  margin: 0 10px;
+  word-break: break-all;
+}
+body .wrapper .main .main__item .main__notes .main__note .note__desc--wrap textarea {
+  margin: 0;
+}
+body .wrapper .main .main__item .main__notes .main__note .note__section {
+  flex: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px 0;
+  border-top: 2px solid #c0cbff;
+}
+body .wrapper .main .main__item .main__notes .main__note .note__section .note__date--wrap {
+  padding-right: 1%;
+}
+body .wrapper .main .main__item .main__notes .main__note .note__section .note__time--wrap {
+  padding: 5px 1%;
+  border-left: 2px solid pink;
+  border-right: 2px solid pink;
+}
+body .wrapper .main .main__item .main__notes .main__note .note__section .note__lnthSymbol--wrap {
+  padding-left: 1%;
+}
+body .wrapper .main .main__item .main__notes .main__note .note__section .note__btns--wrap {
+  display: flex;
+  flex-grow: 1;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  justify-content: end;
+}
+body .wrapper .main .main__item .main__notes .main__note .note__section .note__btns--wrap .note__del--wrap .note__del {
+  padding: 3px;
+  cursor: pointer;
+}
+body .wrapper .main .main__item .main__notes .main__note .note__section .note__btns--wrap .note__chng--wrap .note__chng {
+  padding: 3px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

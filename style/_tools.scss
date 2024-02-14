@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.btn {
+    padding: 5px 10px;
+    border: 3px solid pink;
+    border-radius: 7px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.btn-icon {
+    height: 20px;
+    width: auto;
+}
+input,
+textarea {
+    width: 100%;
+    margin: 25px 0;
+    padding: 5px 10px;
+    border: 3px solid pink;
+    border-radius: 7px;
+    word-break: break-all;
+    background-color: #fff;
+}
+textarea {
+    font-size: 16px;
+    resize: none;
+    outline: none;
+    overflow: auto;
+}

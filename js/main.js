@@ -88,8 +88,15 @@ function CreateNote(desc, date, time, lnthSymbol, localId) {
         textarea.setAttribute('rows', '6');
         textarea.setAttribute('autofocus', '');
         textarea.value = descText;
+        const clue = CreateElement(
+            noteBtnsWrap,
+            'span',
+            ['clue-note__chng'],
+            'Нажмите Enter'
+        );
         textarea.addEventListener('keydown', function (e) {
             if (e.key == 'Enter') {
+                clue.remove();
                 const textareaValue = textarea.value;
                 const thisNoteDesc = CreateElement(
                     noteDescWrap,

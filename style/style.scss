@@ -25,7 +25,7 @@ body {
                     }
                 }
                 .main__field {
-                    flex: 80%;
+                    flex: 78%;
                     display: flex;
                 }
                 .main__btn {
@@ -33,6 +33,7 @@ body {
                     display: flex;
                     justify-content: end;
                     align-items: center;
+                    margin-left: 2%;
                     button {
                         width: fit-content;
                         height: fit-content;
@@ -96,9 +97,142 @@ body {
                                     }
                                 }
                                 .note__chng--wrap {
+                                    order: -1;
                                     .note__chng {
                                         padding: 3px;
                                         cursor: pointer;
+                                    }
+                                }
+                                .clue-note__chng {
+                                    display: flex;
+                                    align-items: center;
+                                    order: -2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 966px) {
+    body {
+        .wrapper {
+            .main {
+                .main__item {
+                    .main__title {
+                        h1 {
+                        }
+                    }
+                    .main__field {
+                        flex: 100%;
+                        textarea {
+                            margin: 25px 0 10px;
+                        }
+                    }
+                    .main__btn {
+                        flex: 100%;
+                        justify-content: center;
+                        margin: 0 0 25px 0;
+                        button {
+                        }
+                    }
+                    .main__notes {
+                        .main__note {
+                            .note__desc--wrap {
+                                .note__desc {
+                                }
+                                textarea {
+                                }
+                            }
+                            .note__section {
+                                .note__date--wrap {
+                                    .note__date {
+                                    }
+                                }
+                                .note__time--wrap {
+                                    .note__time {
+                                    }
+                                }
+                                .note__lnthSymbol--wrap {
+                                    .note__lnthSymbol {
+                                    }
+                                }
+                                .note__btns--wrap {
+                                    .note__del--wrap {
+                                        .note__del {
+                                        }
+                                    }
+                                    .note__chng--wrap {
+                                        .note__chng {
+                                        }
+                                    }
+                                    .clue-note__chng {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    body {
+        font-size: 15px;
+        .wrapper {
+            .main {
+                .main__item {
+                    .main__title {
+                        h1 {
+                            font-size: 20px;
+                        }
+                    }
+                    .main__field {
+                    }
+                    .main__btn {
+                        button {
+                        }
+                    }
+                    .main__notes {
+                        .main__note {
+                            .note__desc--wrap {
+                                .note__desc {
+                                }
+                                textarea {
+                                }
+                            }
+                            .note__section {
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                .note__date--wrap {
+                                    text-align: center;
+                                    .note__date {
+                                    }
+                                }
+                                .note__time--wrap {
+                                    .note__time {
+                                    }
+                                }
+                                .note__lnthSymbol--wrap {
+                                    .note__lnthSymbol {
+                                    }
+                                }
+                                .note__btns--wrap {
+                                    flex: 100%;
+                                    justify-content: center;
+                                    margin-top: 5px;
+                                    .note__del--wrap {
+                                        .note__del {
+                                        }
+                                    }
+                                    .note__chng--wrap {
+                                        .note__chng {
+                                        }
+                                    }
+                                    .clue-note__chng {
                                     }
                                 }
                             }

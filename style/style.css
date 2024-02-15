@@ -64,7 +64,7 @@ body .wrapper .main .main__item .main__title h1 {
   font-size: 24px;
 }
 body .wrapper .main .main__item .main__field {
-  flex: 80%;
+  flex: 78%;
   display: flex;
 }
 body .wrapper .main .main__item .main__btn {
@@ -72,6 +72,7 @@ body .wrapper .main .main__item .main__btn {
   display: flex;
   justify-content: end;
   align-items: center;
+  margin-left: 2%;
 }
 body .wrapper .main .main__item .main__btn button {
   width: -moz-fit-content;
@@ -132,7 +133,49 @@ body .wrapper .main .main__item .main__notes .main__note .note__section .note__b
   padding: 3px;
   cursor: pointer;
 }
+body .wrapper .main .main__item .main__notes .main__note .note__section .note__btns--wrap .note__chng--wrap {
+  order: -1;
+}
 body .wrapper .main .main__item .main__notes .main__note .note__section .note__btns--wrap .note__chng--wrap .note__chng {
   padding: 3px;
   cursor: pointer;
+}
+body .wrapper .main .main__item .main__notes .main__note .note__section .note__btns--wrap .clue-note__chng {
+  display: flex;
+  align-items: center;
+  order: -2;
+}
+
+@media screen and (max-width: 966px) {
+  body .wrapper .main .main__item .main__field {
+    flex: 100%;
+  }
+  body .wrapper .main .main__item .main__field textarea {
+    margin: 25px 0 10px;
+  }
+  body .wrapper .main .main__item .main__btn {
+    flex: 100%;
+    justify-content: center;
+    margin: 0 0 25px 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  body {
+    font-size: 15px;
+  }
+  body .wrapper .main .main__item .main__title h1 {
+    font-size: 20px;
+  }
+  body .wrapper .main .main__item .main__notes .main__note .note__section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body .wrapper .main .main__item .main__notes .main__note .note__section .note__date--wrap {
+    text-align: center;
+  }
+  body .wrapper .main .main__item .main__notes .main__note .note__section .note__btns--wrap {
+    flex: 100%;
+    justify-content: center;
+    margin-top: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */

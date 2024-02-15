@@ -163,6 +163,10 @@ body .wrapper .main .main__item .main__notes .main__note .note__section .note__b
   body {
     font-size: 15px;
   }
+  body .wrapper .main {
+    width: 90%;
+    margin-top: 40px;
+  }
   body .wrapper .main .main__item .main__title h1 {
     font-size: 20px;
   }

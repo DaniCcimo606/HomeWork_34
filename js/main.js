@@ -92,29 +92,27 @@ function CreateNote(desc, date, time, lnthSymbol, localId) {
             noteBtnsWrap,
             'span',
             ['clue-note__chng'],
-            'Нажмите Enter'
+            'Редактировать →'
         );
-        textarea.addEventListener('keydown', function (e) {
-            if (e.key == 'Enter') {
-                clue.remove();
-                const textareaValue = textarea.value;
-                const thisNoteDesc = CreateElement(
-                    noteDescWrap,
-                    'span',
-                    ['note__desc'],
-                    textareaValue
-                );
-                textarea.remove();
-                const jsonObj = localStorage.getItem(
-                    descWrap.parentElement.getAttribute('localId')
-                );
-                const origObj = JSON.parse(jsonObj);
-                origObj.desc = textareaValue;
-                localStorage.setItem(
-                    descWrap.parentElement.getAttribute('localId'),
-                    JSON.stringify(origObj)
-                );
-            }
+        noteChng.addEventListener('click', function (e) {
+            clue.remove();
+            const textareaValue = textarea.value;
+            const thisNoteDesc = CreateElement(
+                noteDescWrap,
+                'span',
+                ['note__desc'],
+                textareaValue
+            );
+            textarea.remove();
+            const jsonObj = localStorage.getItem(
+                descWrap.parentElement.getAttribute('localId')
+            );
+            const origObj = JSON.parse(jsonObj);
+            origObj.desc = textareaValue;
+            localStorage.setItem(
+                descWrap.parentElement.getAttribute('localId'),
+                JSON.stringify(origObj)
+            );
         });
     });
 }

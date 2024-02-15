@@ -186,4 +186,26 @@ body .wrapper .main .main__item .main__notes .main__note .note__section .note__b
   body .wrapper .main .main__item .main__notes .main__note .note__section .note__btns--wrap .clue-note__chng {
     text-align: center;
   }
+}
+@media screen and (max-width: 378px) {
+  body .wrapper .main .main__item .main__notes .main__note .note__desc--wrap .note__desc {
+    font-size: 14px;
+  }
+  body .wrapper .main .main__item .main__notes .main__note .note__section .note__date--wrap {
+    flex: 100%;
+  }
+  body .wrapper .main .main__item .main__notes .main__note .note__section .note__date--wrap .note__date {
+    font-size: 13px;
+  }
+  body .wrapper .main .main__item .main__notes .main__note .note__section .note__time--wrap .note__time {
+    font-size: 13px;
+  }
+  body .wrapper .main .main__item .main__notes .main__note .note__section .note__lnthSymbol--wrap .note__lnthSymbol {
+    font-size: 12px;
+  }
+  body .wrapper .main .main__item .main__notes .main__note .note__section .note__btns--wrap .clue-note__chng {
+    font-size: 12px;
+    text-align: end;
+    word-break: break-all;
+  }
 }/*# sourceMappingURL=style.css.map */

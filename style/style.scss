@@ -175,3 +175,53 @@ body {
         }
     }
 }
+@media screen and (max-width: 378px) {
+    body {
+        .wrapper {
+            .main {
+                .main__item {
+                    .main__title {
+                        h1 {
+                        }
+                    }
+                    .main__notes {
+                        .main__note {
+                            .note__desc--wrap {
+                                .note__desc {
+                                    font-size: 14px;
+                                }
+                                textarea {
+                                }
+                            }
+                            .note__section {
+                                .note__date--wrap {
+                                    flex: 100%;
+                                    .note__date {
+                                        font-size: 13px;
+                                    }
+                                }
+                                .note__time--wrap {
+                                    .note__time {
+                                        font-size: 13px;
+                                    }
+                                }
+                                .note__lnthSymbol--wrap {
+                                    .note__lnthSymbol {
+                                        font-size: 12px;
+                                    }
+                                }
+                                .note__btns--wrap {
+                                    .clue-note__chng {
+                                        font-size: 12px;
+                                        text-align: end;
+                                        word-break: break-all;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
